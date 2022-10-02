@@ -144,24 +144,30 @@ class _DiscoverState extends State<Discover> {
                               const SizedBox(
                                 height: 20,
                               ),
-                              Column(
-                                children: [
-                                  Text(
-                                    missionTitle[index],
-                                    style: const TextStyle(
-                                        color: Colors.black,
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 20),
-                                  ),
-                                  const SizedBox(
-                                    height: 10,
-                                  ),
-                                  Text(
-                                    missionPurpose[index],
-                                    style: const TextStyle(
-                                        color: Colors.black, fontSize: 15),
-                                  ),
-                                ],
+                              Container(
+                                padding:
+                                    const EdgeInsets.symmetric(horizontal: 20),
+                                child: Column(
+                                  children: [
+                                    Text(
+                                      missionTitle[index],
+                                      textAlign: TextAlign.center,
+                                      style: const TextStyle(
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 20),
+                                    ),
+                                    const SizedBox(
+                                      height: 10,
+                                    ),
+                                    Text(
+                                      missionPurpose[index],
+                                      textAlign: TextAlign.center,
+                                      style: const TextStyle(
+                                          color: Colors.black, fontSize: 15),
+                                    ),
+                                  ],
+                                ),
                               ),
                               const SizedBox(
                                 height: 20,
