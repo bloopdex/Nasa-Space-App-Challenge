@@ -45,7 +45,7 @@ class MyImages {
     'assets/images/Profile.svg',
   ];
 
-  static const List<String> DisoverImages = [
+  static const List<String> DiscoverImages = [
     'assets/images/mission-3.png',
     'assets/images/mission-1.png',
     'assets/images/mission-2.png',

@@ -124,7 +124,8 @@ class _DiscoverState extends State<Discover> {
                     // padding: const EdgeInsets.only(left: 32),
                     child: Swiper(
                       itemCount: missionTitle.length,
-                      itemWidth: MediaQuery.of(context).size.width - 2 * 64,
+                      itemWidth: MediaQuery.of(context).size.width / 2,
+                      itemHeight: 400,
                       layout: SwiperLayout.STACK,
                       pagination: const SwiperPagination(
                         builder: DotSwiperPaginationBuilder(
@@ -138,36 +139,52 @@ class _DiscoverState extends State<Discover> {
                           ),
                           child: Column(
                             children: [
-                              Image.asset(MyImages.DisoverImages[index],
+                              Image.asset(MyImages.DiscoverImages[index],
                                   width: 300),
                               const SizedBox(
                                 height: 20,
                               ),
-                              Text(
-                                missionTitle[index],
-                                style: const TextStyle(
-                                    color: Colors.black,
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 20),
-                              ),
-                              const SizedBox(
-                                height: 10,
-                              ),
-                              Text(
-                                missionPurpose[index],
-                                style: const TextStyle(
-                                    color: Colors.black, fontSize: 15),
+                              Column(
+                                children: [
+                                  Text(
+                                    missionTitle[index],
+                                    style: const TextStyle(
+                                        color: Colors.black,
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20),
+                                  ),
+                                  const SizedBox(
+                                    height: 10,
+                                  ),
+                                  Text(
+                                    missionPurpose[index],
+                                    style: const TextStyle(
+                                        color: Colors.black, fontSize: 15),
+                                  ),
+                                ],
                               ),
                               const SizedBox(
                                 height: 20,
                               ),
                               Container(
-                                decoration: const BoxDecoration(
+                                padding: const EdgeInsets.all(20),
+                                margin:
+                                    const EdgeInsets.symmetric(horizontal: 20),
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(10),
                                     color: MyColors.mainColor),
                                 child: GestureDetector(
-                                  onTap: () {},
+                                  onTap: () {
+                                    Navigator.pushNamed(context, '/mission');
+                                  },
                                   child: const Center(
-                                    child: Text('DISCOVER'),
+                                    child: Text(
+                                      'DISCOVER',
+                                      style: TextStyle(
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 20),
+                                    ),
                                   ),
                                 ),
                               )

@@ -177,9 +177,7 @@ class MissionDescription extends StatelessWidget {
                   ),
                 ),
               ),
-              const SizedBox(
-                height: 60,
-              ),
+              Expanded(child: Container()),
               Container(
                 decoration: BoxDecoration(
                   color: MyColors.secondColor,
