@@ -31,14 +31,6 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       routes: {
-        // '/': (context) => const Congrats(),
-        // '/': (context) => Quiz(
-        //       quizNumber: 2,
-        //       quiz: QuizModel(
-        //           question: 'What is the capital of France?',
-        //           answers: ['Paris', 'London', 'Berlin'],
-        //           correctAnswer: 1),
-        //     ),
         '/': (context) => const Loading(),
         '/splash': (context) => const Splash(),
         '/signIn': (context) => const Login(),

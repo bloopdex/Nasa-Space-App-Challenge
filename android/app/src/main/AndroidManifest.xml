@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.bloopdex.earth_mission">
    <application
-        android:label="earth_mission"
+        android:label="The Little Astronauts"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
