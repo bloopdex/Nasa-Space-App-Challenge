@@ -1,4 +1,4 @@
-# earth_mission
+# The Little Astronaut
 
 A new Flutter project.
 
